@@ -1,0 +1,413 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Wed Dec 13 18:18:06 2023
+# Process ID: 16644
+# Current directory: C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.runs/HDMI_bd_transmetteur_UART_0_0_synth_1
+# Command line: vivado.exe -log HDMI_bd_transmetteur_UART_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDMI_bd_transmetteur_UART_0_0.tcl
+# Log file: C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.runs/HDMI_bd_transmetteur_UART_0_0_synth_1/HDMI_bd_transmetteur_UART_0_0.vds
+# Journal file: C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.runs/HDMI_bd_transmetteur_UART_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source HDMI_bd_transmetteur_UART_0_0.tcl -notrace
+Command: synth_design -top HDMI_bd_transmetteur_UART_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1344 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 391.973 ; gain = 102.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'HDMI_bd_transmetteur_UART_0_0' [c:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_transmetteur_UART_0_0/synth/HDMI_bd_transmetteur_UART_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'transmetteur_UART' declared at 'C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/tx_uart.vhd:4' bound to instance 'U0' of component 'transmetteur_UART' [c:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_transmetteur_UART_0_0/synth/HDMI_bd_transmetteur_UART_0_0.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'transmetteur_UART' [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/tx_uart.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'rdc_load_Nbits' [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/rdc_load_Nbits.vhd:21]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Mux' [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/MUX.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Mux' (1#1) [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/MUX.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'registre' [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/registre.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'registre' (2#1) [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/registre.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'rdc_load_Nbits' (3#1) [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/rdc_load_Nbits.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'compteur' [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/compteur.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'full_adder' [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/full_adder.vhd:16]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'onebit_adder' [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/adder_1bit.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'onebit_adder' (4#1) [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/adder_1bit.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (5#1) [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/full_adder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'compteur' (6#1) [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/compteur.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'compare_16bits' [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/cmp_16bits.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'compare_16bits' (7#1) [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/cmp_16bits.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'transmetteur_UART' (8#1) [C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/new/tx_uart.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'HDMI_bd_transmetteur_UART_0_0' (9#1) [c:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.srcs/sources_1/bd/HDMI_bd/ip/HDMI_bd_transmetteur_UART_0_0/synth/HDMI_bd_transmetteur_UART_0_0.vhd:68]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 447.301 ; gain = 157.617
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 447.301 ; gain = 157.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 447.301 ; gain = 157.617
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 795.426 ; gain = 2.539
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 795.426 ; gain = 505.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 795.426 ; gain = 505.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 795.426 ; gain = 505.742
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'etat_reg' in module 'transmetteur_UART'
+INFO: [Synth 8-5546] ROM "OCCUPE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reset_compteur1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "enable_rdc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "TX" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "etat" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 attente |                            00000 |                            00000
+         charger_donnee1 |                            00001 |                            00001
+          bit_demarrage1 |                            00010 |                            00011
+        reset_compteurs1 |                            00011 |                            00010
+             bit_donnee1 |                            00100 |                            00101
+       checkbit_complet1 |                            00101 |                            00100
+                bit_fin1 |                            00110 |                            00110
+                    fin1 |                            00111 |                            00111
+         charger_donnee2 |                            01000 |                            01000
+          bit_demarrage2 |                            01001 |                            01010
+        reset_compteurs2 |                            01010 |                            01001
+             bit_donnee2 |                            01011 |                            01100
+       checkbit_complet2 |                            01100 |                            01011
+                bit_fin2 |                            01101 |                            01101
+                    fin2 |                            01110 |                            01110
+         charger_donnee3 |                            01111 |                            01111
+          bit_demarrage3 |                            10000 |                            10001
+        reset_compteurs3 |                            10001 |                            10000
+             bit_donnee3 |                            10010 |                            10011
+       checkbit_complet3 |                            10011 |                            10010
+                bit_fin3 |                            10100 |                            10100
+                     fin |                            10101 |                            10101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'etat_reg' using encoding 'sequential' in module 'transmetteur_UART'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 795.426 ; gain = 505.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 63    
++---Muxes : 
+	  22 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 13    
+	  22 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 24    
+	  22 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module registre 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module transmetteur_UART 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  22 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 13    
+	  22 Input      3 Bit        Muxes := 3     
+	  22 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 795.426 ; gain = 505.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 796.730 ; gain = 507.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 796.730 ; gain = 507.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 817.238 ; gain = 527.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 817.238 ; gain = 527.555
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 817.238 ; gain = 527.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 817.238 ; gain = 527.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 817.238 ; gain = 527.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 817.238 ; gain = 527.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 817.238 ; gain = 527.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     9|
+|3     |LUT3 |    33|
+|4     |LUT4 |    11|
+|5     |LUT5 |    30|
+|6     |LUT6 |    37|
+|7     |FDCE |    61|
+|8     |FDPE |     1|
+|9     |FDRE |    12|
++------+-----+------+
+
+Report Instance Areas: 
++------+--------------------------------+------------------+------+
+|      |Instance                        |Module            |Cells |
++------+--------------------------------+------------------+------+
+|1     |top                             |                  |   196|
+|2     |  U0                            |transmetteur_UART |   196|
+|3     |    compteur1                   |compteur          |    48|
+|4     |      reg0                      |registre_42       |     3|
+|5     |      reg1                      |registre_43       |     3|
+|6     |      reg10                     |registre_44       |     1|
+|7     |      reg11                     |registre_45       |     1|
+|8     |      reg12                     |registre_46       |     2|
+|9     |      reg13                     |registre_47       |     2|
+|10    |      reg14                     |registre_48       |     1|
+|11    |      reg15                     |registre_49       |     1|
+|12    |      reg2                      |registre_50       |     3|
+|13    |      reg3                      |registre_51       |     4|
+|14    |      reg4                      |registre_52       |     3|
+|15    |      reg5                      |registre_53       |     2|
+|16    |      reg6                      |registre_54       |    11|
+|17    |      reg7                      |registre_55       |     8|
+|18    |      reg8                      |registre_56       |     2|
+|19    |      reg9                      |registre_57       |     1|
+|20    |    compteur2                   |compteur_0        |    44|
+|21    |      reg0                      |registre_26       |     3|
+|22    |      reg1                      |registre_27       |    14|
+|23    |      reg10                     |registre_28       |     1|
+|24    |      reg11                     |registre_29       |     7|
+|25    |      reg12                     |registre_30       |     2|
+|26    |      reg13                     |registre_31       |     1|
+|27    |      reg14                     |registre_32       |     2|
+|28    |      reg15                     |registre_33       |     1|
+|29    |      reg2                      |registre_34       |     2|
+|30    |      reg3                      |registre_35       |     3|
+|31    |      reg4                      |registre_36       |     1|
+|32    |      reg5                      |registre_37       |     1|
+|33    |      reg6                      |registre_38       |     2|
+|34    |      reg7                      |registre_39       |     2|
+|35    |      reg8                      |registre_40       |     1|
+|36    |      reg9                      |registre_41       |     1|
+|37    |    rdc_0                       |rdc_load_Nbits    |    17|
+|38    |      \reg_gen[0].Reg1bit_inst  |registre_18       |     3|
+|39    |      \reg_gen[1].Reg1bit_inst  |registre_19       |     2|
+|40    |      \reg_gen[2].Reg1bit_inst  |registre_20       |     2|
+|41    |      \reg_gen[3].Reg1bit_inst  |registre_21       |     2|
+|42    |      \reg_gen[4].Reg1bit_inst  |registre_22       |     2|
+|43    |      \reg_gen[5].Reg1bit_inst  |registre_23       |     2|
+|44    |      \reg_gen[6].Reg1bit_inst  |registre_24       |     2|
+|45    |      \reg_gen[7].Reg1bit_inst  |registre_25       |     2|
+|46    |    rdc_1                       |rdc_load_Nbits_1  |    18|
+|47    |      \reg_gen[0].Reg1bit_inst  |registre_10       |     3|
+|48    |      \reg_gen[1].Reg1bit_inst  |registre_11       |     2|
+|49    |      \reg_gen[2].Reg1bit_inst  |registre_12       |     2|
+|50    |      \reg_gen[3].Reg1bit_inst  |registre_13       |     2|
+|51    |      \reg_gen[4].Reg1bit_inst  |registre_14       |     2|
+|52    |      \reg_gen[5].Reg1bit_inst  |registre_15       |     2|
+|53    |      \reg_gen[6].Reg1bit_inst  |registre_16       |     2|
+|54    |      \reg_gen[7].Reg1bit_inst  |registre_17       |     3|
+|55    |    rdc_2                       |rdc_load_Nbits_2  |    16|
+|56    |      \reg_gen[0].Reg1bit_inst  |registre          |     3|
+|57    |      \reg_gen[1].Reg1bit_inst  |registre_3        |     2|
+|58    |      \reg_gen[2].Reg1bit_inst  |registre_4        |     2|
+|59    |      \reg_gen[3].Reg1bit_inst  |registre_5        |     2|
+|60    |      \reg_gen[4].Reg1bit_inst  |registre_6        |     2|
+|61    |      \reg_gen[5].Reg1bit_inst  |registre_7        |     2|
+|62    |      \reg_gen[6].Reg1bit_inst  |registre_8        |     2|
+|63    |      \reg_gen[7].Reg1bit_inst  |registre_9        |     1|
++------+--------------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 817.238 ; gain = 527.555
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 817.238 ; gain = 179.430
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 817.238 ; gain = 527.555
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 817.547 ; gain = 541.145
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.runs/HDMI_bd_transmetteur_UART_0_0_synth_1/HDMI_bd_transmetteur_UART_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 62 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/abgae1/Downloads/ZYBO_HDMI_MGA_2018_2/project_1/project_1.runs/HDMI_bd_transmetteur_UART_0_0_synth_1/HDMI_bd_transmetteur_UART_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file HDMI_bd_transmetteur_UART_0_0_utilization_synth.rpt -pb HDMI_bd_transmetteur_UART_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 817.547 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 13 18:18:24 2023...

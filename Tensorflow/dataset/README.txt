@@ -1,0 +1,1 @@
+Les dossiers train et validation ne contiennent pas d'images car celles ci sont trop volumineuses pour le fichier zip. Lea images sont les images Bon et Troue que Loic m'avait envoyé. Elles sont censées être réparties de cette manière : 80% des images dans le dossier train, et 20% dans le dossier validation.

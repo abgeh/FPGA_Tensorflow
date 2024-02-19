@@ -1,0 +1,126 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
+| Date         : Wed Dec 13 18:25:40 2023
+| Host         : pcetu-196 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file HDMI_bd_wrapper_control_sets_placed.rpt
+| Design       : HDMI_bd_wrapper
+| Device       : xc7z020
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    57 |
+| Unused register locations in slices containing registers |   134 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            5 |
+|      8 |            4 |
+|     10 |           11 |
+|     14 |            3 |
+|    16+ |           33 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             660 |          135 |
+| No           | No                    | Yes                    |             102 |           34 |
+| No           | Yes                   | No                     |             270 |           43 |
+| Yes          | No                    | No                     |              94 |           19 |
+| Yes          | No                    | Yes                    |             188 |           32 |
+| Yes          | Yes                   | No                     |             392 |           55 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+----------------+
+|                        Clock Signal                       |                                                 Enable Signal                                                 |                                      Set/Reset Signal                                     | Slice Load Count | Bel Load Count |
++-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+----------------+
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        |                                                                                                               | HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/RdyLostReset/SyncAsyncx/oSyncStages[1]              |                1 |              2 |
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        |                                                                                                               | reset_IBUF                                                                                |                1 |              4 |
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        |                                                                                                               | HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/RdyLostReset/aRst_int                               |                1 |              4 |
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        |                                                                                                               | HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/LockLostReset/SyncAsyncx/oSyncStages[1]             |                1 |              4 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   |                                                                                                               | HDMI_bd_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/in0                                     |                1 |              4 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] |                                                                                                               | HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/in0                                                 |                1 |              4 |
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        | HDMI_bd_i/dvi2rgb_0/U0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/GlitchF_SCL/Filter.cntPeriods[3]_i_2__0_n_0 | HDMI_bd_i/dvi2rgb_0/U0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/SyncSCL/SS[0]           |                1 |              8 |
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        | HDMI_bd_i/dvi2rgb_0/U0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/GlitchF_SDA/Filter.cntPeriods[3]_i_2_n_0    | HDMI_bd_i/dvi2rgb_0/U0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/SyncSDA/SS[0]           |                1 |              8 |
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        | HDMI_bd_i/dvi2rgb_0/U0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/FSM_onehot_sState_reg[0]                    |                                                                                           |                1 |              8 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   | HDMI_bd_i/transmetteur_UART_0/U0/reset_compteur10                                                             |                                                                                           |                2 |              8 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/PhaseAlignX/pCenterTap[5]_i_1__0_n_0                          |                                                                                           |                2 |             10 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/PhaseAlignX/pEyeOpenEn                                        | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/PhaseAlignX/pEyeOpenRst                   |                2 |             10 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/PhaseAlignX/pCenterTap[5]_i_1__1_n_0                          |                                                                                           |                3 |             10 |
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        | HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/rDlyRstCnt[4]_i_1_n_0                                                   | HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/LockLostReset/SyncAsyncx/oSyncStages[1]             |                1 |             10 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/ChannelBondX/pRdEn                                            | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/PhaseAlignX/pMeRdy_int_reg                |                2 |             10 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   |                                                                                                               | HDMI_bd_i/rgb2dvi_0/U0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                2 |             10 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/ChannelBondX/pRdEn                                            | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/PhaseAlignX/pMeRdy_int_reg                |                1 |             10 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/PhaseAlignX/pEyeOpenEn                                        | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/PhaseAlignX/pEyeOpenRst                   |                2 |             10 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/ChannelBondX/pRdEn                                            | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/PhaseAlignX/pMeRdy_int_reg                |                1 |             10 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/PhaseAlignX/pCenterTap[5]_i_1_n_0                             |                                                                                           |                2 |             10 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/PhaseAlignX/pEyeOpenEn                                        | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/PhaseAlignX/pEyeOpenRst                   |                1 |             10 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] |                                                                                                               | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/PhaseAlignX/pCtlTknRst                    |                2 |             14 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] |                                                                                                               | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/PhaseAlignX/pCtlTknRst                    |                2 |             14 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] |                                                                                                               | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/PhaseAlignX/pCtlTknRst                    |                1 |             14 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] |                                                                                                               | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/ChannelBondX/SR[0]                        |                2 |             16 |
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        | HDMI_bd_i/dvi2rgb_0/U0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/dataByte[7]_i_1_n_0                         |                                                                                           |                4 |             16 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   | HDMI_bd_i/transmetteur_UART_0/U0/enable_rdc_reg_n_0_[2]                                                       | reset_IBUF                                                                                |                3 |             16 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   | HDMI_bd_i/transmetteur_UART_0/U0/en                                                                           | reset_IBUF                                                                                |                4 |             16 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] |                                                                                                               | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/ChannelBondX/pDataIn_reg[0][0]            |                3 |             16 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   | HDMI_bd_i/transmetteur_UART_0/U0/enable_rdc_reg_n_0_[0]                                                       | reset_IBUF                                                                                |                3 |             16 |
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        |                                                                                                               | HDMI_bd_i/dvi2rgb_0/U0/LockLostReset/SyncAsyncx/oSyncStages[1]                            |                6 |             18 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   |                                                                                                               | HDMI_bd_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0              |                5 |             20 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/PhaseAlignX/pState[10]_i_1__1_n_0                             | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/pAlignRst_reg_n_0                         |                3 |             22 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] |                                                                                                               | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/ChannelBondX/SR[0]                        |                3 |             22 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/PhaseAlignX/pState[10]_i_1__0_n_0                             | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/pAlignRst_reg_n_0                         |                4 |             22 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/PhaseAlignX/pState[10]_i_1_n_0                                | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/pAlignRst_reg_n_0                         |                4 |             22 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] |                                                                                                               | HDMI_bd_i/dvi2rgb_0/U0/LockLostReset/SyncAsyncx/oSyncStages[1]                            |                8 |             24 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   | HDMI_bd_i/fsm_rw_0/U0/x_counter[11]_i_2_n_0                                                                   | HDMI_bd_i/fsm_rw_0/U0/x_counter[11]_i_1_n_0                                               |                4 |             24 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   | HDMI_bd_i/fsm_rw_0/U0/y_counter0                                                                              | HDMI_bd_i/fsm_rw_0/U0/y_counter[11]_i_1_n_0                                               |                4 |             24 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   | HDMI_bd_i/square_0/U0/y_counter[0]_i_2_n_0                                                                    | HDMI_bd_i/square_0/U0/y_counter[0]_i_1_n_0                                                |                3 |             24 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   | HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/vid_pVDE                                                   | HDMI_bd_i/square_0/U0/x_counter[0]_i_1_n_0                                                |                3 |             24 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   |                                                                                                               | reset_IBUF                                                                                |               12 |             28 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   | HDMI_bd_i/transmetteur_UART_0/U0/enable_compteur2                                                             | HDMI_bd_i/transmetteur_UART_0/U0/reset_compteur2                                          |                6 |             32 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   | HDMI_bd_i/transmetteur_UART_0/U0/enable_compteur1                                                             | HDMI_bd_i/transmetteur_UART_0/U0/reset_compteur1                                          |                6 |             32 |
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        | HDMI_bd_i/dvi2rgb_0/U0/GenerateDDC.DDC_EEPROM/I2C_SlaveController/E[0]                                        |                                                                                           |                5 |             32 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   | HDMI_bd_i/fsm_rw_0/U0/address                                                                                 | reset_IBUF                                                                                |                5 |             36 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   | HDMI_bd_i/fsm_rw_0/U0/uart_counter                                                                            | reset_IBUF                                                                                |                5 |             40 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] |                                                                                                               | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/PhaseAlignX/pMeRdy_int_reg                |                5 |             42 |
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/rTimeoutCnt[0]_i_1__1_n_0                                     | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/SyncBaseRst/SyncAsyncx/oSyncStages[1]     |                6 |             48 |
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/rTimeoutCnt[0]_i_1__0_n_0                                     | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[1].DecoderX/SyncBaseRst/SyncAsyncx/oSyncStages[1]     |                6 |             48 |
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/rTimeoutCnt[0]_i_1_n_0                                        | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[2].DecoderX/SyncBaseRst/SyncAsyncx/oSyncStages[1]     |                6 |             48 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   |                                                                                                               | HDMI_bd_i/square_0/U0/is_border                                                           |                7 |             48 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   |                                                                                                               | HDMI_bd_i/rgb2dvi_0/U0/DataEncoders[0].DataEncoder/SR[0]                                  |               13 |             64 |
+|  HDMI_bd_i/clk_wiz_0/inst/clk_out1                        |                                                                                                               |                                                                                           |               22 |             72 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] | HDMI_bd_i/dvi2rgb_0/U0/DataDecoders[0].DecoderX/PhaseAlignX/pAllVld                                           |                                                                                           |                6 |             96 |
+|  HDMI_bd_i/dvi2rgb_0/U0/TMDS_ClockingX/oSyncStages_reg[1] |                                                                                                               |                                                                                           |               48 |            292 |
+|  HDMI_bd_i/dvi2rgb_0/U0/GenerateBUFG.ResyncToBUFG_X/CLK   |                                                                                                               |                                                                                           |               65 |            296 |
++-----------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+----------------+
+
+

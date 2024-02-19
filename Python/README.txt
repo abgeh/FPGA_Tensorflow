@@ -1,0 +1,3 @@
+Le script readandconvert se met en mode réception sur le port série (COM4 dans mon cas) et convertit les données brutes du FPGA en image bitmap. Il doit etre executé dans les 5 secondes précedant l'appui sur le bouton, sinon il signale un timeout et s'arrête. 
+
+Le script signal_holes prend en parametre une image (specifiée dans le code) et retourne 81 sous images, divisées en deux classes (suivant les choix de l'utilisateur) et situées dans le dossier du même nom que le fichier.
